@@ -1,0 +1,363 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #232f3e;
+    color: white;
+}
+
+.logo img {
+    height: 60px;
+    margin-left:50px;
+  }
+  
+
+header .search-bar {
+    display: flex;
+    width: 50%;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #febd69;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+header .nav-menu a, 
+header .user-options a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero .hero-text p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero .hero-text button {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    background-color: #febd69;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Featured Categories */
+.featured-categories {
+    padding: 20px;
+    background-color: white;
+}
+
+.featured-categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-categories .categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-categories .category {
+    text-align: center;
+    margin: 10px;
+}
+
+.featured-categories .category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Deal of the Day */
+.deal-of-the-day {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.deal-of-the-day h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.deal-of-the-day .deal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.deal-of-the-day .deal img {
+    width: 200px;
+    height: auto;
+}
+
+.deal-of-the-day .deal-info {
+    text-align: center;
+}
+
+.deal-of-the-day .deal-info h3 {
+    margin: 10px 0;
+}
+
+.deal-of-the-day .deal-info p {
+    margin: 5px 0;
+}
+
+.deal-of-the-day .deal-info .countdown {
+    font-size: 18px;
+}
+
+/* Popular Products */
+.popular-products {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.popular-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popular-products .products-carousel {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.popular-products .product {
+    text-align: center;
+    margin: 10px;
+}
+
+.popular-products .product img {
+    width: 150px;
+    height: auto;
+}
+
+.popular-products .product button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #febd69;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Customer Reviews */
+.customer-reviews {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.customer-reviews h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customer-reviews .reviews-carousel {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.customer-reviews .review {
+    text-align: center;
+    margin: 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.customer-reviews .review p {
+    margin: 10px 0;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefits .benefit {
+    text-align: center;
+    margin: 10px;
+}
+
+.benefits .benefit img {
+    width: 50px;
+    height: auto;
+}
+
+.benefits .benefit p {
+    margin-top: 10px;
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.newsletter-signup button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #febd69;
+    cursor: pointer;
+}
+
+/* Social Proof */
+.social-proof {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-proof h2 {
+    margin-bottom: 20px;
+}
+
+.social-proof .social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-proof .social-media-icons a {
+    margin: 0 10px;
+}
+
+.social-proof .social-media-icons img {
+    width: 40px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: #febd69;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .newsletter-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .newsletter-signup input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+footer .newsletter-signup button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #febd69;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .search-bar {
+        width: 70%;
+    }
+
+    .hero .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero .hero-text p {
+        font-size: 18px;
+    }
+
+    .deal-of-the-day .deal img {
+        width: 150px;
+    }
+
+    .deal-of-the-day .deal-info {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .featured-categories .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular-products .products-carousel,
+    .customer-reviews .reviews-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+}

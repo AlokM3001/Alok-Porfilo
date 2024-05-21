@@ -1,0 +1,411 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+header {
+    background: #04deaf;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    background: #fff;
+    border-radius: 5px;
+    height: 3px;
+    margin: 3px 0;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 200px;
+        display: none;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+#hero {
+    background: url('top-view-paint-brushes-with-copy-space.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding-top: 60px;
+}
+
+#hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hero .hero-content .cta {
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+#about {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+#about .skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#about .skills li {
+    background: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+#about .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background: #f4f4f4;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#portfolio .project {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+#portfolio .project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#portfolio .project h3 {
+    margin: 1rem 0;
+}
+
+#portfolio .project p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#portfolio .project .btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Blog Section */
+#blog {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#blog .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#blog .post {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+#blog .post h3 {
+    margin: 1rem 0;
+}
+
+#blog .post p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#blog .post .btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contact form input, 
+#contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact .contact-details {
+    margin-top: 2rem;
+}
+
+#contact .contact-details p {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .footer-content ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+footer .footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        order: 2;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about .skills {
+        flex-direction: column;
+    }
+
+    #portfolio .projects {
+        flex-direction: column;
+    }
+
+    #blog .posts {
+        flex-direction: column;
+    }
+
+    .back-to-top {
+        display: block;
+    }
+}
